@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 
 public class BuscarTodos {
     
-    public static void main(String[] args) {
+    public static void executar() {
         
         String url = "jdbc:postgresql://localhost:5432/mercado";
         String usuario = "postgres";
@@ -35,8 +35,6 @@ public class BuscarTodos {
             System.out.println("Erro ao conectar.");
             e.printStackTrace();
         }
-        
-        System.exit(0);
         
     }
 }

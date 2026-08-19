@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 
 public class DeletarItem {
 
-    public static void main(String[] args) {
+    public static void executar() {
 
         String url = "jdbc:postgresql://localhost:5432/mercado";
         String usuario = "postgres";
@@ -57,8 +57,6 @@ public class DeletarItem {
         } catch (SQLException e) {
             System.out.println("Erro ao deletar.");
         }
-
-        System.exit(0);
 
     }
 }
